@@ -1,0 +1,24 @@
+
+type Post {
+  id: Int
+  content: String
+  comments:[Comment]
+  likes:Int
+}
+
+type Comment {
+  text: String
+}
+
+
+type Query {
+  posts: [Post]
+  
+ 
+}
+
+type Mutation
+{
+  createPost( content:String! ):Post
+  
+}
