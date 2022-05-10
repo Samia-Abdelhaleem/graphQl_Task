@@ -1,0 +1,19 @@
+
+type Account{
+    id:ID
+    userName:String
+    email:String
+    password:String
+}
+
+type Query{
+    
+    getAccount(userName:String! , email:String!): Account
+    getAllAccounts:[Account]
+    # getAccountJWT(): Account
+
+}
+
+type Mutation {
+    createAccount(userName: String!,email: String!,password: String!): Account
+  }
